@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
-    <!-- 首先定义标题栏 -->
+    <!-- 首先定义1标题栏 -->
     <RelativeLayout
         android:id="@+id/biaoti"
         android:layout_width="match_parent"
