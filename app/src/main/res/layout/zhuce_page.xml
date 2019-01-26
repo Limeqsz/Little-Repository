@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/zhuce_page_title" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"></LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        android:weightSum="1">
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="手机号"
+                    android:layout_gravity="center"
+                    android:textSize="21sp"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="30dp"
+                    android:textColor="#000"
+                    android:inputType="text"
+                    android:autofillHints="user" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_account"/>
+            </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="0.24">
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:text="获得验证码"
+                android:textSize="21sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/dl_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="验证码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="21sp"
+                    android:textColor="#000"
+                    android:autofillHints="password"
+                    />
+
+                />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="21sp"
+                    android:textColor="#000"
+                    android:autofillHints="password"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_password"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="5dp"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rg1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pswRadioBtn1"
+                android:checked="false"
+                android:clickable="false"
+                android:textColor="#fff"
+                android:layout_alignParentLeft="true"
+                android:text="家长"
+                android:button="@drawable/radiobutton_style"
+                />
+            <Button
+                android:id="@+id/bt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:background="#0Dffffff"
+                android:text="孩子"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="注册"
+            android:textSize="21sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/dl_bg"/>
+
+
+        </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>
