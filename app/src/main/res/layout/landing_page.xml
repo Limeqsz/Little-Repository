@@ -165,7 +165,7 @@
                     android:id="@+id/childrenclient_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="145dp"
+                    android:layout_marginLeft="140dp"
                     android:button="@drawable/radiobutton_style"
                     android:checked="false"
                     android:clickable="false"
