@@ -22,27 +22,22 @@
 
     <LinearLayout
         android:id="@+id/biaoti"
-        android:layout_width="429dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
         android:background="@drawable/bg_c"
-        app:layout_constraintBottom_toTopOf="@+id/search_position"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button"
-            android:layout_width="25dp"
-            android:layout_height="29dp"
+            android:layout_width="23dp"
+            android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:background="@drawable/ic_title_back"
-            android:text=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/ic_back"
+            android:text="" />
 
         <TextView
             android:id="@+id/text_title"
@@ -51,91 +46,69 @@
             android:ellipsize="marquee"
             android:gravity="center"
             android:singleLine="true"
-            android:text="修改电子围栏"
+            android:text="设置电子围栏"
             android:textColor="#fff"
             android:textSize="21sp" />
-
-        <Button
-            android:id="@+id/title_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:background="@drawable/ic_title_back"
-            android:minWidth="0dp"
-            android:minHeight="0dp"
-            android:text="设置电子围栏"
-            android:textColor="@android:color/white"
-            android:textSize="21sp" />
-
         <!--<Button-->
-        <!--android:id="@+id/delete_fence"-->
-        <!--android:layout_width="57dp"-->
-        <!--android:layout_height="34dp"-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
         <!--android:layout_alignParentRight="true"-->
         <!--android:layout_margin="8dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginLeft="8dp"-->
-        <!--android:layout_marginEnd="16dp"-->
-        <!--android:layout_marginRight="16dp"-->
-        <!--android:background="@drawable/delete_finish_button"-->
         <!--android:text="删除"-->
         <!--android:textColor="@android:color/white" />-->
-
-
     </LinearLayout>
 
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="30dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/map"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/search_position"
-        app:srcCompat="@drawable/ic_search"
-        tools:ignore="VectorDrawableCompat" />
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="493dp"
+        android:layout_height="61dp"
 
-    <TextView
-        android:id="@+id/search_position"
-        android:layout_width="329dp"
-        android:layout_height="41dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="未传入值"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
-        android:textSize="@dimen/font_size"
-        android:theme="@style/MyEditText"
-        app:layout_constraintBottom_toTopOf="@+id/map"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biaoti">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="28dp"
+            android:layout_height="29dp"
+            app:srcCompat="@drawable/ic_search"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/search_position"
+            android:layout_width="347dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="未传入值"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/font_size"
+            android:theme="@style/MyEditText" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/map"
-        android:layout_width="377dp"
+        android:layout_width="391dp"
         android:layout_height="314dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginBottom="300dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
@@ -305,10 +278,16 @@
         android:id="@+id/submit_fence"
         android:layout_width="63dp"
         android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/delete_finish_button"
         android:text="提  交"
         android:textColor="@android:color/white"
         android:textSize="@dimen/small_fontsize"
-        tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="603dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>
