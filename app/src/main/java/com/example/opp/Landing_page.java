@@ -56,7 +56,8 @@ public class Landing_page extends AppCompatActivity {
         landButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Landing_page.this,home_page.class);
+                startActivity(intent);
             }
         });
     }
