@@ -231,15 +231,14 @@
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="383dp" />
 
-        <TimePicker
+        <TextView
             android:id="@+id/start_date"
             android:layout_width="59dp"
             android:layout_height="30dp"
             android:ems="10"
-            android:scaleX="2"
-            android:scaleY="2"
+            android:clickable="true"
+            android:gravity="center_horizontal"
             android:theme="@style/MyEditText"
-            android:timePickerMode="spinner"
             tools:layout_editor_absoluteX="84dp"
             tools:layout_editor_absoluteY="383dp" />
 
@@ -256,15 +255,14 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="383dp" />
 
-        <TimePicker
+        <TextView
             android:id="@+id/end_date"
             android:layout_width="59dp"
             android:layout_height="30dp"
+            android:clickable="true"
             android:ems="10"
-            android:scaleX="2"
-            android:scaleY="2"
+            android:gravity="center_horizontal"
             android:theme="@style/MyEditText"
-            android:timePickerMode="spinner"
             tools:layout_editor_absoluteX="201dp"
             tools:layout_editor_absoluteY="383dp" />
 

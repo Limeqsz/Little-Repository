@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/background"
-    android:gravity="center_vertical">
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/biaoti"
@@ -43,47 +43,40 @@
         <!--android:text="删除"-->
         <!--android:textColor="@android:color/white" />-->
     </LinearLayout>
-
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="439dp"
-        android:layout_height="53dp"
-
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/biaoti">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="28dp"
-            android:layout_height="29dp"
-            app:srcCompat="@drawable/ic_search"
-            tools:ignore="VectorDrawableCompat" />
-
-        <EditText
-            android:id="@+id/search_position"
-            android:layout_width="286dp"
-            android:layout_height="41dp"
-            android:ems="10"
-            android:hint="请输入地点"
-            android:inputType="textPersonName"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:theme="@style/MyEditText" />
-
-        <Button
-            android:id="@+id/button_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/delete_finish_button"
-            android:text="搜索"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入地点..."
+            android:id="@+id/search_position"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/font_size" />
+            android:textColorHint="@android:color/white"
+            android:maxLines="2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:id="@+id/button_search"
+            android:background="@drawable/delete_finish_button"
+            />
+
     </LinearLayout>
+
 
     <!--<LinearLayout-->
     <!--android:id="@+id/map"-->
@@ -105,4 +98,4 @@
     <!--</LinearLayout>-->
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
