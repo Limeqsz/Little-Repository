@@ -21,8 +21,6 @@
             android:layout_width="23dp"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
             android:background="@drawable/ic_back"
             android:text="" />
 
@@ -49,10 +47,9 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="439dp"
-        android:layout_height="61dp"
+        android:layout_height="53dp"
 
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
@@ -83,9 +80,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/delete_finish_button"
-            android:textSize="@dimen/font_size"
-            android:text="搜  索"
-            android:textColor="@android:color/white" />
+            android:text="搜索"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size" />
     </LinearLayout>
 
     <!--<LinearLayout-->
