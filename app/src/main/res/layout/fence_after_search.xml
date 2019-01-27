@@ -7,304 +7,284 @@
     android:background="@mipmap/background"
     android:gravity="center_vertical">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout"
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:id="@+id/constraintLayout"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="55dp"-->
+    <!--android:layout_marginBottom="520dp"-->
+    <!--android:background="@mipmap/top_nav_bg"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+
+
+    <LinearLayout
+        android:id="@+id/biaoti"
         android:layout_width="match_parent"
-        android:layout_height="50dip"
-        android:background="@mipmap/top_nav_bg"
-        android:gravity="center_vertical"
-        android:orientation="vertical">
+        android:layout_height="59dp"
+        android:background="@drawable/bg_c"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button"
-            android:layout_width="25dp"
-            android:layout_height="29dp"
+            android:layout_width="23dp"
+            android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            android:background="@drawable/ic_title_back"
-            android:text=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_back"
+            android:text="" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
             android:text="设置电子围栏"
-            android:textColor="@android:color/white"
-            android:textSize="21sp"
-            app:fontFamily=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/delete_fence"
-            android:layout_width="57dp"
-            android:layout_height="34dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginStart="8dp"
-            android:background="@drawable/delete_finish_button"
-            android:text="删除"
-            android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="#fff"
+            android:textSize="21sp" />
+        <!--<Button-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:text="删除"-->
+        <!--android:textColor="@android:color/white" />-->
+    </LinearLayout>
 
 
-    </android.support.constraint.ConstraintLayout>
-
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="30dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toStartOf="@+id/search_position"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_search"
-        tools:ignore="VectorDrawableCompat" />
-
-    <EditText
-        android:id="@+id/search_position"
-        android:layout_width="329dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:hint="请输入地点"
-        android:inputType="textPersonName"
-        android:text=""
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
-        android:theme="@style/MyEditText"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/map"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biaoti"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="28dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_search"
+            tools:ignore="VectorDrawableCompat" />
+
+        <EditText
+            android:id="@+id/search_position"
+            android:layout_width="325dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="未传入值"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/font_size"
+            android:theme="@style/MyEditText" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/map"
-        android:layout_width="377dp"
-        android:layout_height="307dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="420dp"
+        android:layout_height="314dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout3"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="300dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.369">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:layout_gravity="center_vertical"
-            android:gravity="center"
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:text="map" />
+            android:gravity="center"
+            android:text="map"
+            android:visibility="visible" />
     </LinearLayout>
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="161dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayout6"
-            android:layout_width="325dp"
-            android:layout_height="0dp"
-            android:layout_marginBottom="3dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="325dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map">
 
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="73dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="围栏名称："
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/small_fontsize" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="围栏名称："
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_fontsize" />
 
-            <EditText
-                android:id="@+id/position"
-                android:layout_width="wrap_content"
-                android:layout_height="43dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="输入地点"
-                android:inputType="textPersonName"
-                android:text=""
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/white"
-                android:theme="@style/MyEditText" />
-        </LinearLayout>
+        <EditText
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="输入地点"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:theme="@style/MyEditText" />
+    </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout5"
-            android:layout_width="325dp"
-            android:layout_height="0dp"
-            android:layout_marginBottom="60dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="327dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="围栏名称：     "
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_fontsize" />
 
-                android:text="围栏半径："
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/small_fontsize" />
+        <EditText
+            android:id="@+id/radius"
+            android:layout_width="132dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:hint="半径"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:theme="@style/MyEditText" />
 
-            <EditText
-                android:id="@+id/radius"
-                android:layout_width="132dp"
-                android:layout_height="43dp"
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-                android:ems="10"
-                android:hint="半径"
-                android:inputType="textPersonName"
-                android:text=""
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/white"
-                android:theme="@style/MyEditText" />
+            android:text="m"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_fontsize" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="260dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/submit_fence"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-                android:text="m"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/small_fontsize" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="260dp"
-            android:layout_height="39dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.203"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="开始："
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/small_fontsize"
-                tools:layout_editor_absoluteX="29dp"
-                tools:layout_editor_absoluteY="383dp" />
-
-            <EditText
-                android:id="@+id/start_date"
-                android:layout_width="59dp"
-                android:layout_height="30dp"
-                android:ems="10"
-                android:inputType="date"
-                android:theme="@style/MyEditText"
-                tools:layout_editor_absoluteX="84dp"
-                tools:layout_editor_absoluteY="383dp" />
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="结束："
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/small_fontsize"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.436"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="383dp" />
-
-
-            <EditText
-                android:id="@+id/end_date"
-                android:layout_width="59dp"
-                android:layout_height="30dp"
-                android:ems="10"
-                android:inputType="date"
-                android:theme="@style/MyEditText"
-                tools:layout_editor_absoluteX="201dp"
-                tools:layout_editor_absoluteY="383dp" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/submit_fence"
-            android:layout_width="63dp"
-            android:layout_height="38dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="276dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="276dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/delete_finish_button"
-            android:text="提  交"
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始："
             android:textColor="@android:color/white"
             android:textSize="@dimen/small_fontsize"
-            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <TimePicker
+            android:id="@+id/start_date"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:theme="@style/MyEditText"
+            android:timePickerMode="spinner"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <TimePicker
+            android:id="@+id/end_date"
+            android:layout_width="59dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:theme="@style/MyEditText"
+            android:timePickerMode="spinner"
+            tools:layout_editor_absoluteX="201dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束："
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/small_fontsize"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintHorizontal_bias="0.436"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.837" />
-    </android.support.constraint.ConstraintLayout>
+            tools:layout_editor_absoluteY="383dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_fence"
+        android:layout_width="63dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/delete_finish_button"
+        android:text="提  交"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/small_fontsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>
