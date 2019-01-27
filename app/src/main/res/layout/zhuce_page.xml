@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -28,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
                 <EditText
+                    android:id="@+id/zhuceaccount_Edittext"
                     android:layout_width="250dp"
                     android:layout_height="50dp"
                     android:hint="手机号"
@@ -58,6 +60,7 @@
                 android:layout_width="170dp"
                 android:layout_height="35dp"
                 android:text="获得验证码"
+                android:id="@+id/zhucegetVerification_button"
                 android:textSize="21sp"
                 android:layout_gravity="center"
                 android:gravity="center"
@@ -80,6 +83,7 @@
                     android:layout_width="250dp"
                     android:layout_height="50dp"
                     android:hint="验证码"
+                    android:id="@+id/zhuceputVerification_Edittext"
                     android:inputType="textPassword"
                     android:paddingLeft="30dp"
                     android:layout_gravity="center"
@@ -107,6 +111,7 @@
                     android:layout_width="250dp"
                     android:layout_height="50dp"
                     android:hint="密码"
+                    android:id="@+id/zhuceputpsw_Edittext"
                     android:inputType="textPassword"
                     android:paddingLeft="30dp"
                     android:layout_gravity="center"
@@ -134,10 +139,15 @@
             android:layout_gravity="center"
             android:orientation="horizontal"
             >
+            <RadioGroup
+                android:id="@+id/zhuceSelectClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/pswRadioBtn1"
+                android:id="@+id/zhuceparentclient_button"
                 android:checked="false"
                 android:clickable="false"
                 android:textColor="#fff"
@@ -145,16 +155,20 @@
                 android:text="家长"
                 android:button="@drawable/radiobutton_style"
                 />
-            <Button
-                android:id="@+id/bt_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minWidth="0dp"
-                android:minHeight="0dp"
-                android:textColor="#fff"
-                android:layout_alignParentRight="true"
-                android:background="#0Dffffff"
-                android:text="孩子"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/zhucechildrenclient_button"
+                    android:checked="false"
+                    android:layout_marginLeft="170dp"
+                    android:clickable="false"
+                    android:textColor="#fff"
+                    android:layout_alignParentLeft="true"
+                    android:text="儿童"
+                    android:button="@drawable/radiobutton_style"
+                    />
+            </RadioGroup>
         </RelativeLayout>
 
         <Button
@@ -162,6 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="注册"
+            android:id="@+id/zhuceregister_button"
             android:textSize="21sp"
             android:layout_gravity="center"
             android:gravity="center"
