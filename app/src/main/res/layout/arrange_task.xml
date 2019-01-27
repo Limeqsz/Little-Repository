@@ -7,9 +7,36 @@
     android:background="@mipmap/background"
     android:gravity="center_vertical">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/release_task_title" />
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_c">
+        <TextView
+            android:text="布置任务"
+            android:id="@+id/text_title"
+            android:textSize="21sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <Button
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/ic_title_back"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            />
+
+    </RelativeLayout>
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout2"
