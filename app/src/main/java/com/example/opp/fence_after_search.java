@@ -11,7 +11,7 @@ import android.widget.TimePicker;
 
 public class fence_after_search extends AppCompatActivity {
     private Button button_back;
-    private  TextView tv_search_value;
+    private  EditText tv_search_value;
     private  TimePicker startTimepicker;
     private TimePicker endTimepicker;
     @Override

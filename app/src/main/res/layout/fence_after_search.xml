@@ -34,8 +34,7 @@
             android:layout_width="23dp"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/ic_back"
             android:text="" />
 
@@ -62,31 +61,30 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="493dp"
-        android:layout_height="61dp"
-
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/map"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/biaoti">
+        app:layout_constraintTop_toBottomOf="@+id/biaoti"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="28dp"
             android:layout_height="29dp"
+            android:layout_marginLeft="10dp"
             app:srcCompat="@drawable/ic_search"
             tools:ignore="VectorDrawableCompat" />
 
-        <TextView
+        <EditText
             android:id="@+id/search_position"
-            android:layout_width="347dp"
+            android:layout_width="325dp"
             android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="未传入值"
@@ -98,7 +96,7 @@
 
     <LinearLayout
         android:id="@+id/map"
-        android:layout_width="391dp"
+        android:layout_width="420dp"
         android:layout_height="314dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -182,7 +180,7 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="围栏半径："
+            android:text="围栏名称：     "
             android:textColor="@android:color/white"
             android:textSize="@dimen/small_fontsize" />
 
@@ -190,7 +188,6 @@
             android:id="@+id/radius"
             android:layout_width="132dp"
             android:layout_height="43dp"
-
             android:ems="10"
             android:hint="半径"
             android:inputType="textPersonName"
