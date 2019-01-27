@@ -34,7 +34,7 @@
 
         <LinearLayout
             android:layout_width="300dp"
-            android:layout_height="270dp"
+            android:layout_height="300dp"
             android:layout_marginTop="40dp"
             android:layout_gravity="center"
             android:background="@drawable/account_bg"
@@ -165,7 +165,7 @@
                     android:id="@+id/childrenclient_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="145dp"
+                    android:layout_marginLeft="140dp"
                     android:button="@drawable/radiobutton_style"
                     android:checked="false"
                     android:clickable="false"
@@ -219,5 +219,5 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>

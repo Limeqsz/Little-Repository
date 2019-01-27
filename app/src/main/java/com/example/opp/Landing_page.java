@@ -26,7 +26,7 @@ public class Landing_page extends AppCompatActivity {
         //实例化控件
         super.onCreate(savedInstanceState);
         setContentView(R.layout.landing_page);
-        registerButton=findViewById(R.id.forget_button);
+        registerButton=findViewById(R.id.register_button);
         landButton=findViewById(R.id.landing_button);
         account=findViewById(R.id.account_Edittext);
         psw=findViewById(R.id.psw_Edittext);
@@ -56,7 +56,8 @@ public class Landing_page extends AppCompatActivity {
         landButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Landing_page.this,home_page.class);
+                startActivity(intent);
             }
         });
     }
