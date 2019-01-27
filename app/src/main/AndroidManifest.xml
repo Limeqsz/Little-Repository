@@ -16,6 +16,7 @@
         <activity android:name=".contacts_main" />
         <activity android:name=".task_main" />
         <activity android:name=".fence_before_search" />
+        <activity android:name=".fence_after_search" />
         <activity android:name=".home_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -89,7 +89,7 @@
         app:srcCompat="@drawable/ic_search"
         tools:ignore="VectorDrawableCompat" />
 
-    <EditText
+    <TextView
         android:id="@+id/search_position"
         android:layout_width="329dp"
         android:layout_height="41dp"
@@ -97,9 +97,9 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:ems="10"
-        android:hint="请输入地点"
         android:inputType="textPersonName"
-        android:text=""
+        android:text="未传入值"
+        android:textSize="@dimen/font_size"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         android:theme="@style/MyEditText"
@@ -258,13 +258,15 @@
                 tools:layout_editor_absoluteX="29dp"
                 tools:layout_editor_absoluteY="383dp" />
 
-            <EditText
+            <TimePicker
                 android:id="@+id/start_date"
                 android:layout_width="59dp"
                 android:layout_height="30dp"
                 android:ems="10"
-                android:inputType="date"
                 android:theme="@style/MyEditText"
+                android:timePickerMode="spinner"
+                android:scaleX="2"
+                android:scaleY="2"
                 tools:layout_editor_absoluteX="84dp"
                 tools:layout_editor_absoluteY="383dp" />
 
@@ -281,13 +283,15 @@
                 tools:layout_editor_absoluteY="383dp" />
 
 
-            <EditText
+            <TimePicker
                 android:id="@+id/end_date"
                 android:layout_width="59dp"
                 android:layout_height="30dp"
                 android:ems="10"
-                android:inputType="date"
                 android:theme="@style/MyEditText"
+                android:timePickerMode="spinner"
+                android:scaleX="2"
+                android:scaleY="2"
                 tools:layout_editor_absoluteX="201dp"
                 tools:layout_editor_absoluteY="383dp" />
         </LinearLayout>
