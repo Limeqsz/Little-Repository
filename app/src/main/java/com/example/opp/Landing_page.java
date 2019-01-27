@@ -26,7 +26,7 @@ public class Landing_page extends AppCompatActivity {
         //实例化控件
         super.onCreate(savedInstanceState);
         setContentView(R.layout.landing_page);
-        registerButton=findViewById(R.id.forget_button);
+        registerButton=findViewById(R.id.register_button);
         landButton=findViewById(R.id.landing_button);
         account=findViewById(R.id.account_Edittext);
         psw=findViewById(R.id.psw_Edittext);
