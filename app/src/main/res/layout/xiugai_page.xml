@@ -21,7 +21,30 @@
         android:orientation="vertical"
         android:weightSum="1">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:id="@+id/xiugai_account"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="手机号或者账户"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="21sp"
+                    android:textColor="#000"
+                    android:autofillHints="password"
+                    />
+            </FrameLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,9 +57,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
                 <EditText
+                    android:id="@+id/xiugai_oldpsw"
                     android:layout_width="250dp"
                     android:layout_height="50dp"
-                    android:hint="密码"
+                    android:hint="原密码"
                     android:inputType="textPassword"
                     android:paddingLeft="30dp"
                     android:layout_gravity="center"
@@ -66,6 +90,40 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
                 <EditText
+                    android:id="@+id/xiugai_newpsw"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:hint="新密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="21sp"
+                    android:textColor="#000"
+                    android:autofillHints="password"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_password"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="5dp"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <EditText
+                    android:id="@+id/xiugai_newpswagin"
                     android:layout_width="250dp"
                     android:layout_height="50dp"
                     android:hint="再次输入密码"
@@ -90,6 +148,7 @@
 
 
         <Button
+            android:id="@+id/xiugai_next"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
