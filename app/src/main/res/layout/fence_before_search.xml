@@ -8,72 +8,46 @@
     android:background="@mipmap/background"
     android:gravity="center_vertical">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout"
+    <RelativeLayout
+        android:id="@+id/biaoti"
         android:layout_width="match_parent"
-        android:layout_height="50dip"
-        android:layout_marginBottom="680dp"
-        android:background="@mipmap/top_nav_bg"
-        android:gravity="center_vertical"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="58dp"
+        android:background="@drawable/bg_c">
+        <TextView
+            android:text="设置电子围栏"
+            android:id="@+id/text_title"
+            android:textSize="21sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="23dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:background="@drawable/ic_back"
-            android:text=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/title_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:text="设置电子围栏"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/titlename_size"
-            app:fontFamily=""
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.562" />
-
+            android:layout_margin="13dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/ic_title_back"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            />
         <Button
-            android:id="@+id/delete_fence"
-            android:layout_width="57dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:background="@drawable/delete_finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
             android:text="删除"
             android:textColor="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/textView2"
+            android:layout_margin="8dp"
+            />
 
 
-    </android.support.constraint.ConstraintLayout>
-
+    </RelativeLayout>
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="386dp"
@@ -85,7 +59,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+
         app:layout_constraintVertical_bias="0.095">
 
         <ImageView
