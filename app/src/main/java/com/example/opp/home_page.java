@@ -51,14 +51,6 @@ public class home_page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button button_lianxiren = (Button) findViewById(R.id.title_lianxiren);
-        button_lianxiren.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(home_page.this,contacts_main.class );
-                startActivity(intent);
-            }
-        });
         Button button_call_record = (Button) findViewById(R.id.title_tonghua);
         button_call_record.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +59,15 @@ public class home_page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button button_lianxiren = (Button) findViewById(R.id.title_lianxiren);
+        button_lianxiren.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(home_page.this,contacts_main.class );
+                startActivity(intent);
+            }
+        });
+
 
 
     }
