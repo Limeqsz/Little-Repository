@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class contacts_main extends AppCompatActivity {
-
+    public static String ASS="gou dong xi";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
