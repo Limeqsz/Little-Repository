@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="zhuceaccount_Edittext" type="id" />
+    <item name="zhuceputVerification_Edittext" type="id" />
+    <item name="zhucegetVerification_button" type="id" />
+    <item name="zhuceputpsw_Edittext" type="id" />
+    <item name="zhuceregister_button" type="id" />
+    <item name="zhuceparentclient_button" type="id" />
+    <item name="zhucechildrenclient_button" type="id" />
+    <item name="zhuceSelectClient" type="id" />
+</resources>
