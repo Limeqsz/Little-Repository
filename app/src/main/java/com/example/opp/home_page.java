@@ -17,7 +17,8 @@ public class home_page extends AppCompatActivity {
         button_title_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(home_page.this,"这个页面还没写好",Toast.LENGTH_LONG ).show();
+                Intent intent = new Intent(home_page.this,add_page.class );
+                startActivity(intent);
             }
         });
         Button button_yonghu = (Button) findViewById(R.id.title_yonghu);
