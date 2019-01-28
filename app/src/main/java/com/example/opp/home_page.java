@@ -13,14 +13,16 @@ public class home_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
-        Button button_title_back = (Button) findViewById(R.id.title_back);
-        button_title_back.setOnClickListener(new View.OnClickListener() {
+
+        Button button_add = (Button) findViewById(R.id.btn_add);
+        button_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(home_page.this,add_page.class );
                 startActivity(intent);
             }
         });
+
         Button button_yonghu = (Button) findViewById(R.id.title_yonghu);
         button_yonghu.setOnClickListener(new View.OnClickListener() {
             @Override
