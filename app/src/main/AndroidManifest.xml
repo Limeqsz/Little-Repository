@@ -18,16 +18,18 @@
         <activity android:name=".task_main" />
         <activity android:name=".fence_before_search" />
         <activity android:name=".fence_after_search" />
-        <activity android:name=".home_page" />
-        <activity android:name=".Zhuce_page" />
-        <activity android:name=".Xiugai_page" />
-        <activity android:name=".Landing_page">
+        <activity android:name=".home_page"
+            android:label="首页"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Zhuce_page" />
+        <activity android:name=".Xiugai_page" />
+        <activity android:name=".Landing_page"/>
     </application>
 
 </manifest>
