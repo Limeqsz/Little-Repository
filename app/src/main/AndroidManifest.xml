@@ -11,15 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".call_main"/>
+        <activity android:name=".task_item"></activity>
+        <activity android:name=".call_main" />
         <activity android:name=".chat_main" />
         <activity android:name=".contacts_main" />
         <activity android:name=".task_main" />
         <activity android:name=".fence_before_search" />
         <activity android:name=".fence_after_search" />
-        <activity android:name=".home_page"/>
+        <activity android:name=".home_page" />
         <activity android:name=".Zhuce_page" />
-        <activity android:name=".Xiugai_page"/>
+        <activity android:name=".Xiugai_page" />
         <activity android:name=".Landing_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
