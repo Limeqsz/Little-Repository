@@ -21,7 +21,8 @@
             android:layout_width="23dp"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_back"
+            android:layout_margin="13dp"
+            android:background="@drawable/ic_title_back"
             android:text="" />
 
         <TextView
@@ -78,24 +79,24 @@
     </LinearLayout>
 
 
-    <!--<LinearLayout-->
-    <!--android:id="@+id/map"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="338dp"-->
-    <!--android:layout_marginTop="8dp"-->
-    <!--app:layout_constraintStart_toStartOf="parent"-->
-    <!--app:layout_constraintTop_toBottomOf="@+id/linearLayout3">-->
+    <LinearLayout
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="338dp"
+    android:layout_marginTop="8dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-    <!--<TextView-->
-    <!--android:id="@+id/Map"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="507dp"-->
-    <!--android:layout_gravity="center"-->
-    <!--android:layout_weight="1"-->
-    <!--android:gravity="center"-->
-    <!--android:text="map" />-->
+        <TextView
+            android:id="@+id/Map"
+            android:layout_width="wrap_content"
+            android:layout_height="349dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="map" />
 
-    <!--</LinearLayout>-->
+    </LinearLayout>
 
 
 </LinearLayout>

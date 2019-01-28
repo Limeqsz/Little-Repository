@@ -34,8 +34,8 @@
             android:layout_width="23dp"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/ic_back"
+            android:layout_margin="13dp"
+            android:background="@drawable/ic_title_back"
             android:text="" />
 
         <TextView
@@ -231,15 +231,17 @@
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="383dp" />
 
-        <TextView
+        <EditText
             android:id="@+id/start_date"
             android:layout_width="59dp"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:ems="10"
-            android:textSize="18dp"
+            android:hint="日期"
+            android:textSize="12sp"
             android:textColor="@android:color/white"
             android:clickable="true"
-            android:gravity="center_horizontal"
+            android:focusable="false"
+            android:gravity="center"
             android:theme="@style/MyEditText"
             tools:layout_editor_absoluteX="84dp"
             tools:layout_editor_absoluteY="383dp" />
@@ -257,15 +259,17 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="383dp" />
 
-        <TextView
+        <EditText
             android:id="@+id/end_date"
             android:layout_width="59dp"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:clickable="true"
-            android:textSize="18dp"
+            android:textSize="12sp"
+            android:hint="日期"
+            android:focusable="false"
             android:textColor="@android:color/white"
             android:ems="10"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:theme="@style/MyEditText"
             tools:layout_editor_absoluteX="201dp"
             tools:layout_editor_absoluteY="383dp" />
@@ -284,5 +288,42 @@
 
 
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/start_time"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="时间"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:theme="@style/MyEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/end_time"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="144dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="时间"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:theme="@style/MyEditText"
+        app:layout_constraintBaseline_toBaselineOf="@+id/start_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
