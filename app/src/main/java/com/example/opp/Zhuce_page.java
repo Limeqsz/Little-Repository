@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.support.v7.widget.Toolbar;
 
 public class Zhuce_page extends AppCompatActivity {
     private EditText account;
@@ -32,5 +33,8 @@ public class Zhuce_page extends AppCompatActivity {
         childrenClient=findViewById(R.id.zhucechildrenclient_button);
         selectClient=findViewById(R.id.zhuceSelectClient);
 
+        //实例化标题栏
+        Toolbar toolbar = findViewById(R.id.zhuce_title);
+        setSupportActionBar(toolbar);
     }
 }
