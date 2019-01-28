@@ -8,13 +8,13 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class home_page extends AppCompatActivity {
-
+    private Button button_add;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
-        Button button_add = (Button) findViewById(R.id.btn_add);
+        button_add = findViewById(R.id.btn_add);
         button_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
